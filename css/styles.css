@@ -142,6 +142,7 @@ h6 {
   content: '';
   position: absolute;
   left: 0;
+  width: 100%;
   bottom: -1px;
   height: 4px;
   background-color: var(--c-background-ocean);
@@ -282,7 +283,6 @@ h6 {
   color: var(--c-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 
 /*END 2*/
