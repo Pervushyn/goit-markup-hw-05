@@ -453,6 +453,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 24px;
 }
 .footer-icons {
   width: 100%;
@@ -475,18 +476,20 @@ h6 {
   fill: var(--c-cloud);
 }
 .footer-label {
-  background-color: var(--c-background-prymary-brand);
 }
 .footer-input {
   color: var(--c-white);
   border: 1px solid var(--c-white);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 264px;
   height: 40px;
-  margin-right: 24px;
   background-color: var(--c-background-hero);
   padding-left: 16px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .button-telegram {
   display: flex;
