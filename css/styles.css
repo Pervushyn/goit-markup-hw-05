@@ -564,7 +564,6 @@ h6 {
   padding: 0;
   cursor: pointer;
   border-radius: 50%;
-  border: var(--c-border);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -585,6 +584,7 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02;
   margin-bottom: 16px;
+  letter-spacing: 0.02em;
 }
 .send-button {
   min-width: 169px;
