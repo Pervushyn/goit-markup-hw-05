@@ -606,6 +606,7 @@ h6 {
 }
 .privacy-policy {
   text-decoration: underline;
+  color: var(--c-prymary-brand);
 }
 
 .modal-field {
@@ -640,10 +641,10 @@ h6 {
   outline: none;
   border-color: var(--c-background-prymary-brand);
 }
-.modal-input:hover + .icon-contact {
+.modal-input:hover + .svg-privasy {
   fill: var(--c-background-prymary-brand);
 }
-.modal-input:focus + .icon-contact {
+.modal-input:focus + .svg-privasy {
   fill: var(--c-background-prymary-brand);
 }
 .modal-input:focus {
@@ -709,14 +710,13 @@ h6 {
 .privacy-policy-check {
   margin-right: 8px;
 }
-
-.modal-check-input:checked + .svg-privasy {
-  background-color: var(--c-background-ocean);
+.modal-checkbox-input:checked + .text-policy .modal-checkbox-check {
 }
 .modal-checkbox-check {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--c-background-ocean);
   width: 16px;
   height: 16px;
   fill: transparent;
@@ -739,5 +739,10 @@ h6 {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+.text-policy:checked {
+  background-color: var(--c-background-ocean);
+  border: none;
+  fill: var(--c-cloud);
 }
 /*END Modal*/
