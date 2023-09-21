@@ -538,6 +538,7 @@ h6 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px;
+  min-height: 584px;
   background-color: var(--c-background-modal);
   border-radius: 4px;
   max-width: 408px;
@@ -546,21 +547,36 @@ h6 {
   max-height: 584px;
   flex-shrink: 0;
 }
+.svg-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-close {
-  background-color: var(--c-background-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-background-accent);
   position: absolute;
+  width: 24px;
+  height: 24px;
   top: 24px;
   right: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
   border-radius: 50%;
   border: var(--c-border);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover {
+  fill: var(--c-white);
   background-color: var(--c-background-ocean);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:focus {
   background-color: var(--c-background-ocean);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--c-white);
 }
 .call-back {
   color: var(--c-dark);
