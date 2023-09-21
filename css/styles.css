@@ -641,14 +641,14 @@ h6 {
   outline: none;
   border-color: var(--c-background-prymary-brand);
 }
-.modal-input:hover + .svg-privasy {
+.modal-input:hover + .icon-contact {
   fill: var(--c-background-prymary-brand);
 }
-.modal-input:focus + .svg-privasy {
+.modal-input:focus + .icon-contact {
   fill: var(--c-background-prymary-brand);
+  outline: none;
 }
 .modal-input:focus {
-  outline: none;
   border-color: var(--c-background-prymary-brand);
 }
 .modal-input-wrap {
