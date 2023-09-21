@@ -475,7 +475,8 @@ h6 {
 .footer-svg {
   fill: var(--c-cloud);
 }
-.footer-label {
+.telegram {
+  margin-left: 16px;
 }
 .footer-input {
   color: var(--c-white);
@@ -495,9 +496,9 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   border: none;
   cursor: pointer;
+  min-width: 165px;
   background-color: var(--c-background-prymary-brand);
   border-radius: 4px;
   padding: 8px 24px;
@@ -520,6 +521,8 @@ h6 {
   position: fixed;
   inset: 0;
   background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-open {
   opacity: 1;
@@ -527,7 +530,13 @@ h6 {
   pointer-events: auto;
 }
 .modal {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px;
   background-color: var(--c-background-modal);
   border-radius: 4px;
