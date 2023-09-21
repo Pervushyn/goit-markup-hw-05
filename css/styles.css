@@ -704,13 +704,14 @@ h6 {
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
+  color: var(--c-prymary-brand);
 }
 .privacy-policy-check {
   margin-right: 8px;
 }
 
-.modal-check-input:checked + .modal-checkbox-check {
-  background-color: var(--c-background-prymary-brand);
+.modal-check-input:checked + .svg-privasy {
+  background-color: var(--c-background-ocean);
 }
 .modal-checkbox-check {
   display: inline-flex;
@@ -726,6 +727,9 @@ h6 {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-privasy {
+  background-color: var(--c-background-ocean);
+  border: none;
+  fill: var(--c-cloud);
 }
 .text-policy {
   color: var(--c-border);
