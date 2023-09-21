@@ -713,10 +713,19 @@ h6 {
   background-color: var(--c-background-prymary-brand);
 }
 .modal-checkbox-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
-  border: 1px solid var(--c-border);
+  fill: transparent;
   border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg-privasy {
 }
 .text-policy {
   color: var(--c-border);
@@ -724,7 +733,7 @@ h6 {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 /*END Modal*/
