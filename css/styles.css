@@ -711,12 +711,16 @@ h6 {
   margin-right: 8px;
 }
 .modal-checkbox-input:checked + .text-policy .modal-checkbox-check {
+  border: none;
+  fill: var(--c-cloud);
 }
 .modal-checkbox-check {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: var(--c-background-ocean);
+  border: none;
+  fill: var(--c-cloud);
   width: 16px;
   height: 16px;
   fill: transparent;
